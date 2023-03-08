@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"></linkrel>
+</head>
+<body>
+    <!--Header which displays on the left of the viewport-->
+    <header>
+        <div id="imageContainer">
+            <div id="ColorBlock"></div>
+            <img id="profilePic" src="./images/profile-picture.jpeg" alt="Profile Picture"/>
+        </div>
+        <div id="nameAndDetails">
+        <h1>Hennie Scheepers</h1>
+            <!--List of basic information like phone number, email, git-->
+            <ul>
+                <li id="basicInfo"><img class="icon" src="./images/call-icon.svg">0725933436</li>
+                <li id="basicInfo"><img class="icon" src="./images/email-icon.svg"/>hennie.104@hotmail.com</li>
+                <li id="basicInfo"><a href="https://github.com/HennieScheepers" target="_blank"><img class="icon" src="./images/git-icon.svg"></a><a href="https://github.com/HennieScheepers" target="_blank">Github</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Main container which will display different sections on the right hand side of the viewport-->
+    <section id="mainContainer">
+        <!--Education Section of resume-->
+        <section id="Education">
+            <h2>Education</h2>
+            <section id="educationSubContainer">
+                <h3 class="qualificationName">Qualification 1</h3>
+                <p class="qualificationDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </section>
+            <section id="educationSubContainer">
+                <h3 class="qualificationName">Qualification 2</h3>
+                <p class="qualificationDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </section>
+            <section id="educationSubContainer">
+                <h3 class="qualificationName">Qualification 3</h3>
+                <p class="qualificationDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </section>
+        </section>
+        <!--Skills section of Resume-->
+        <h2>Skills</h2>
+        <section id="Skills">
+            <aside class="skillsList">
+                <ul>
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                    <li>Skill 3</li>
+                </ul>
+            </aside>
+            <aside class="skillsList">
+                <ul>
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                    <li>Skill 3</li>
+                </ul>
+            </aside>
+            <aside class="skillsList">
+                <ul>
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                    <li>Skill 3</li>
+                </ul>
+            </aside>
+        </section>
+        <!--Experience Section of resume-->
+        <section id="Experience">
+            <h2>Experience</h2>
+            <section id="experienceSubContainer">
+                <h3 class="experienceName">Job 1</h3>
+                <p class="experienceDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </section>
+            <section id="experienceSubContainer">
+                <h3 class="experienceName">Job 2</h3>
+                <p class="experienceDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </section>
+            <section id="experienceSubContainer">
+                <h3 class="experienceName">Job 3</h3>
+                <p class="experienceDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </section>
+        </section>
+        <!--Hobbies section of resume-->
+        <h2>Hobbies</h2>
+            <section id="Hobbies">
+                <aside class="hobbyList">
+                    <ul>
+                        <li>Hobby 1</li>
+                        <li>Hobby 2</li>
+                        <li>Hobby 3</li>
+                    </ul>
+                </aside>
+                <aside class="hobbyList">
+                    <ul>
+                        <li>Hobby 4</li>
+                        <li>Hobby 5</li>
+                        <li>Hobby 6</li>
+                    </ul>
+                </aside>
+                <aside class="hobbyList">
+                    <ul>
+                        <li>Hobby 7</li>
+                        <li>Hobby 8</li>
+                        <li>Hobby 9</li>
+                    </ul>
+                </aside>
+            </section>
+            <footer>
+                <h3>Contact me!</h3>
+                <form target="_blank" action="https://formsubmit.co/hennie.104@hotmail.com" method="POST">
+                    <label for="Name">Name: 
+                        <input id="Name" name="Name" type="text" required>
+                    </label>
+                    <label for="Email">Email: 
+                        <input id="Email" name="Email" type="email" required>
+                    </label>
+                    <label for="Subject">Subject: 
+                        <select id="Subject" name="Subject" required>
+                            <option value="Work">Potential work</option>
+                            <option value="Feedback">I have some feedback</option>
+                            <option value="Chat">Let's have a chat</option>
+                        </select>
+                    </label>
+                    <label for="Message">Message:
+                        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                    </label>
+                    <div id="buttonContainer">
+                        <label for="Submit">
+                            <input id="Submit" type="submit">
+                        </label>
+                    </div>  
+
+                </form>
+            </footer>
+        </section>
+</body>
+</html>

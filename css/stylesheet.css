@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #FF4698;
+}
+
+/*Poistion relative so we can use poistion absolute for colorBlock*/
+#imageContainer {
+    flex: 1;
+    position: relative;
+}
+
+#basicInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+/*Styling for the profile picture*/
+#profilePic {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: fill;
+    z-index: 0;
+    position: relative;
+    top: 20px;
+}
+
+/*Animation for color block on refresh of the page*/
+@keyframes colorBlock {
+    0% {width: 100%; height: 0%;}
+    25% {width: 100%; height: 120%;}
+    50% {width: 0%; height: 120%;}
+    75% {width: 100%; height: 120%;}
+}
+
+/*Styling for the color block*/
+#ColorBlock {
+    background-color: #FF4698;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    border-radius: 5px;
+    z-index: -1;
+    animation-name: colorBlock;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*Basic styling for the nameAndDetails section*/
+#nameAndDetails {
+    margin: 25px;
+    top: 220px;
+    flex: 2;
+    text-align: center;
+}
+
+/*Styling for lists in general*/
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+/*Styling for the header section to be displayed on the left*/
+header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: flex-start;
+    position: sticky;
+    top:15px;  
+}
+
+h2 {
+    margin: 0;
+}
+
+/*Main content styling with different sections (Education, experience, etc)*/
+#mainContainer {
+    flex: 2;
+    margin: 25px;
+}
+
+#Education, #Experience {
+    margin-bottom: 50px;
+}
+
+#educationSubContainer, #experienceSubContainer{
+    display: flex;
+}
+
+.qualificationName, .experienceName {
+    flex: 1;
+}
+
+.qualificationDescription, .experienceDescription {
+    flex: 2;
+}
+
+#Skills, #Hobbies {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/*Styling for icons*/
+.icon {
+    height: 20px;
+    width: 20px;
+    filter: invert(39%) sepia(100%) saturate(1253%) hue-rotate(307deg) brightness(98%) contrast(106%);
+}
+
+/*Keyframes for icon when hovering over it*/
+@keyframes iconAnimation {
+    8.3%{transform: rotate(-15deg) scale(120%);}
+    16.6%{transform: rotate(0deg) scale(110%); }
+    24.9%{transform: rotate(15deg) scale(120%);} 
+    33.26%{transform: rotate(0deg) scale(110%); }
+    41.6%{transform: rotate(-15deg) scale(120%); }
+    50%{transform: rotate(0deg) scale(110%); }
+    58.3%{transform: rotate(15deg) scale(120%); }
+    66.6%{transform: rotate(0deg) scale(110%); }
+    74.9%{transform: rotate(-15deg) scale(120%); }
+    83.2%{transform: rotate(0deg) scale(110%); }
+    91.5%{transform: rotate(15deg) scale(120%); }
+    100%{transform: rotate(0deg) scale(110%); }
+}
+
+/*Animation for on hover of icons*/
+.icon:hover {
+    animation-name: iconAnimation;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-iteration-count: infinite;
+}
+
+li {
+    margin: 0 0 10px 0;
+}
+
+footer {
+    background-color: #FF4698;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: footerAnimate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+form {
+    width: 400px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Submit {
+    font-family: 'Courier New', Courier, monospace;
+}
+
