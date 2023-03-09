@@ -173,7 +173,7 @@ h2 {
     margin-top: 150px;
     width: 100%;
     animation-name: fadeInAnimation;
-    animation-duration: 9s;
+    animation-duration: 13s;
 }
 
 #Education, #Experience {
@@ -186,6 +186,7 @@ h2 {
 
 .qualificationName, .experienceName {
     flex: 1;
+    margin: 10px;
 }
 
 .qualificationDescription, .experienceDescription {
@@ -253,7 +254,7 @@ footer {
 }
 
 form {
-    width: 400px;
+    width: 350px;
 }
 
 label {
