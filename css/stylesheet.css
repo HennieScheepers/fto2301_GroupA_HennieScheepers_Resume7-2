@@ -111,7 +111,7 @@ picture {
 
 /*Styling for the color block*/
 #ColorBlock {
-    background-image: linear-gradient(to right,#FF4698, #ff0070);
+    background-image: linear-gradient(to right,#FF4698, #ff9970);
     background-size: 1000%;
     background-position: left;
     position: absolute;
@@ -230,7 +230,7 @@ li {
 }
 
 footer {
-    background-image: linear-gradient(to right,#FF4698, #ff0070);
+    background-image: linear-gradient(to right,#FF4698, #ff9970);
     background-size: 10000%;
     background-position: left;
     padding: 10px;
