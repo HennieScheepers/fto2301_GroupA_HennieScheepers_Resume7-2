@@ -11,8 +11,12 @@ body {
 
 @keyframes fadeOut {
     0% {opacity: 1;}
-    50%{opacity: 1;}
+    90%{opacity: 1;}
     100%{opacity: 0;}
+}
+
+#heroPar {
+    font-size: small;
 }
 
 #heroText {
@@ -22,7 +26,7 @@ body {
     z-index: 1;
     top: 80px;
     animation-name: fadeOut;
-    animation-duration: 3.5s;
+    animation-duration: 8s;
 }
 
 h1, h2 {
@@ -31,7 +35,7 @@ h1, h2 {
 
 #name {
     animation-name: fadeInAnimation;
-    animation-duration: 6s;
+    animation-duration: 11s;
 }
 
 /*Poistion relative so we can use poistion absolute for colorBlock*/
@@ -47,7 +51,7 @@ h1, h2 {
 
 @keyframes fadeInAnimation {
     0% {opacity: 0;}
-    50% {opacity: 0;}
+    90% {opacity: 0;}
     100% {opacity: 1;}
 }
 
@@ -57,7 +61,7 @@ picture {
     flex: 1;
     opacity: 1;
     animation-name: fadeInAnimation;
-    animation-duration: 6s;
+    animation-duration: 10s;
 }
 
 #largePP, #smallPP, #mediumPP{
@@ -79,7 +83,7 @@ picture {
     flex: 1;
     position: relative;
     animation-name: fadeInAnimation;
-    animation-duration: 9s;
+    animation-duration: 12s;
 }
 
 /*Styling for the profile picture*/
@@ -119,8 +123,8 @@ picture {
     width: 100%;
     border-radius: 5px;
     animation-name: colorBlock, gradientMove;
-    animation-duration: 3s, 40s;
-    animation-delay: 0s, 6s;
+    animation-duration: 5s, 40s;
+    animation-delay: 0s, 16s;
     animation-iteration-count: 1, infinite;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1), ease;
     flex: 1;
