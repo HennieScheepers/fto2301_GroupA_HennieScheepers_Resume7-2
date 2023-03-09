@@ -9,13 +9,19 @@
 </head>
 <body>
     <!--Header which displays on the left of the viewport-->
+    <h1 id="heroText">Looking for a web developer?</h1>
+    <h1></h1>
     <header>
         <div id="imageContainer">
             <div id="ColorBlock"></div>
-            <img id="profilePic" src="./images/profile-picture.jpeg" alt="Profile Picture"/>
+            <picture id="profilePic">
+                <source id="smallPP" media="(max-width: 450px)" srcset="./images/pp-small.jpg">
+                <source id="mediumPP" media="(max-width: 800px)" srcset="./images/pp-medium.jpg">
+                <img id="largePP" src="./images/pp-large.jpg">
+            </picture>
         </div>
         <div id="nameAndDetails">
-        <h1>Hennie Scheepers</h1>
+        <h1 id="name">Hennie Scheepers</h1>
             <!--List of basic information like phone number, email, git-->
             <ul>
                 <li id="basicInfo"><img class="icon" src="./images/call-icon.svg">0725933436</li>
